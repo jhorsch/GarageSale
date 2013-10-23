@@ -1,0 +1,18 @@
+<h1>I recommend</h1>
+  <ul>
+
+  <% item_number = 0 %>
+
+  <%  @myitems.each do |item| %>
+   <li><%= link_to "#{item[:item]}: #{item[:price]} ", item_url(item[:id]) %> </li>
+    <% item_number = item_number +1 %>
+  <% end %>
+
+  </ul>
+
+
+
+
+
+
+
